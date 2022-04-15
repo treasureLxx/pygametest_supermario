@@ -9,7 +9,7 @@ class Game:
         self.screen = pygame.display.get_surface()
         self.clock = pygame.time.Clock()
 
-    def run(self, GRAPHICS):
+    def run(self, state):
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
