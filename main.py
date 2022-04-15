@@ -1,7 +1,6 @@
 #游戏主要入口
-import  pygame
-
-from source import tools
+import pygame
+from source import tools,setup
 
 
 def main():
