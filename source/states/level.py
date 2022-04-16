@@ -31,6 +31,10 @@ class Level:
 
     def update_player_position(self):
         self.player.rect.x += self.player.x_vel
+        if self.player.rect.x < 0:
+            self.player.rect.x = 0
+        if self.player.rect.x > C.SCREEN_H - 16 * C.PLAYER_MULTI:
+            self.player.rect.x = C.SCREEN_H - 16 * C.PLAYER_MULTI
         self.player.rect.y += self.player.y_vel
 
     def draw(self, surface):
