@@ -1,6 +1,6 @@
 #游戏主要入口
 import pygame
-from source import tools, setup
+from source import tools
 from source.states import main_menu, load_screen, level
 
 
